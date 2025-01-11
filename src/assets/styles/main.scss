@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   
+}
+
+#car-title {
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #FFF;
+
+    div {
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 400; 
+            
+            span {
+                font-weight: 700; 
+            }
+        }
+    }
+}
+
+.table-info {
+    .table-info-titles{
+        display: flex;
+        gap: 10px;
+    }
+}
