@@ -1,0 +1,105 @@
+.Info-car {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8vh;
+
+    .car-info {
+        font-size: 32px;
+        font-weight: 700;
+
+        .car-title {
+            background-color: rgb(241, 241, 241);
+            padding-bottom: 1vh;
+            padding-top: 10vh;
+        }
+
+        div {
+            padding-top: 1.5vh;
+
+            h4 {
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            h3 {
+                font-size: 32px;
+                font-weight: 400;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8vh;
+
+        .main-table-info {
+            display: flex;
+            justify-content: space-around;
+            font-weight: 700;
+
+            .table-info-title {
+                font-size: 24px;
+            }
+
+            .table-info {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+                margin-bottom: 3.5vh;
+
+                .img-icon {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img {
+                        flex-shrink: 0;
+                        width: 24px;
+                        height: auto;
+                    }
+
+                    .table-info-titles {
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        span {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-info-2 {
+            display: flex;
+            gap: 1vh;
+
+            .title {
+                font-size: 32px;
+                font-weight: 700;
+                padding: 20px;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+
+            .title,
+            .text {
+                flex: 1;
+            }
+        }
+    }
+}

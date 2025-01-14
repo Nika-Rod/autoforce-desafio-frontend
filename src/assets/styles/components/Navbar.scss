@@ -1,0 +1,34 @@
+nav {
+    background-color: #FFF;
+    padding: 1.5vw 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .nav-style {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5vh;
+
+        .logo-dealer {
+            height: 60%;
+            margin-top: 1vh;
+        }
+    }
+
+    .contact {
+        display: flex;
+        gap: 2.5vh;
+    }
+}

@@ -1,0 +1,53 @@
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+
+    .div-footer {
+
+        .social-midia {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4vh;
+
+            .list {
+                display: flex;
+                gap: 1vw;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    gap: .5vw;
+                }
+            }
+        }
+
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            gap: .5vw;
+            margin: 2vh 0;
+
+            h4 {
+                font-size: 16px;
+                font-weight: 700;
+
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .privacy-policy {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4vh;
+
+            p {
+                font-size: 12px;
+                text-align: end;
+            }
+        }
+    }
+}

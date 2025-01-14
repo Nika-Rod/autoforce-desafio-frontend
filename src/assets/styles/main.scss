@@ -2,35 +2,185 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-   
+@import 'variables';
+@import 'components/Footer.scss';
+@import 'components/Navbar.scss';
+@import 'components/Infocar.scss';
+@import 'components/Aboutcar.scss';
+@import 'components/Aboutcar.scss';
+@import 'components/Header.scss';
+
+body {
+    margin: 0;
+    padding-top: calc(1.5vw + 42px);
+    background-color: #fff;
 }
 
-#car-title {
-    font-size: 32px;
+.center-div {
+    width: 100%;
+}
+
+.padding-center {
+    padding-right: 12vh;
+    padding-left: 12vh;
+}
+
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.youtube-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.border-divider {
+    border: 3px solid #333333;
+}
+
+.simple-border-divider {
+    border: 1px solid #E1E1E1;
+    margin: 12px 0;
+}
+
+.line-container {
+    position: relative;
+    padding-left: 10px;
+}
+
+.line-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black;
+}
+
+
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 14px;
     font-weight: 700;
-    background-color: #FFF;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: $primary-color;
+}
 
-    div {
-        h4 {
-            font-size: 24px;
-            font-weight: 400;
-        }
+.button-style img {
+    width: 16px;
+    height: auto;
+}
 
-        h3 {
-            font-size: 32px;
-            font-weight: 400; 
-            
-            span {
-                font-weight: 700; 
-            }
-        }
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-.table-info {
-    .table-info-titles{
-        display: flex;
-        gap: 10px;
+.fade-out {
+    animation: fadeOut 1.5s ease-in-out;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s ease-in-out;
+}
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 1536px) {
+    .center-div {
+        max-width: 1536px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .center-div {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .center-div {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .center-div {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .center-div {
+        max-width: 640px;
+    }
+
+    .padding-center {
+        padding-right: 8vh;
+        padding-left: 8vh;
+    }
+}
+
+@media (max-width: 639px) {
+    .center-div {
+        max-width: 640px;
+    }
+
+    .padding-center {
+        padding-right: 8vh;
+        padding-left: 8vh;
     }
 }
