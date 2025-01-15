@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import BmwImg from '../../assets/images/bmw.png';
-import DealerLogo from '../../assets/images/dealer-logo-preta.png';
+import PorsheImg from '../../assets/images/porshe.png';
+import MercedesImg from '../../assets/images/mercedes.png';
+import MiniCooperImg from '../../assets/images/mini-cooper.png';
 import RightArrow from '../../assets/svg/icon_right_arrow.svg';
 import LeftArrow from '../../assets/svg/icon_left_arrow.svg';
 
 const HeaderCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [BmwImg, DealerLogo];
+    const images = [PorsheImg, MercedesImg, MiniCooperImg];
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -31,6 +32,7 @@ const HeaderCarousel = () => {
                     <img
                         key={index}
                         src={image}
+                        style={{borderRadius: "50px"}}
                         alt={`Slide ${index}`}
                         className={`carousel-image ${currentIndex === index ? 'active' : ''}`}
                     />

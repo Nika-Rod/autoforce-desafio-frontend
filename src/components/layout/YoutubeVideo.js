@@ -1,8 +1,7 @@
 import React from 'react';
 
-const YouTubeVideo = () => {
-  const videoId = 'Fr5lt86dPyU'; 
-
+const YouTubeVideo = ({ videoId }) => {
+ 
   return (
     <div className='youtube-video'>
       <iframe

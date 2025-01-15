@@ -1,5 +1,3 @@
-@import '../variables.scss';
-
 .Header {
   width: 100%;
   margin: 0;
@@ -29,14 +27,15 @@
         font-size: 2.5rem;
         font-weight: 700;
 
-        .text-primary {
-          color: #007bff;
+        span {
+          color: $primary-color;
         }
       }
     }
   }
 
   .header-main {
+    margin-bottom: 10vh;
 
     .title-text {
       display: flex;

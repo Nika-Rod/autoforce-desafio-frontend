@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import logoDealer from '../../assets/images/dealer-logo.png'
 import logoAutoForce from '../../assets/images/autoforce-logo.png'
 import iconIntagram from '../../assets/svg/icon_instagram.svg'
@@ -5,6 +6,18 @@ import iconLinkedin from '../../assets/svg/icon_linkedin.svg'
 import iconYoutube from '../../assets/svg/icon_instagram.svg'
 
 const Footer = () => {
+    const [company, setCompany] = useState(null); 
+
+    useEffect(() => {
+        fetch(`http://localhost:3000/company`)
+            .then((response) => response.json())
+            .then((data) => setCompany(data)); 
+    }, []); 
+
+    if (!company) { 
+        return <div>Carregando...</div>;
+    }
+
     return (
         <footer>
             <div className='center-div margin-center padding-center'>
@@ -14,17 +27,17 @@ const Footer = () => {
                         <div className='list'>
                             <p>Siga nos:</p>
                             <ul>
-                                <li><a><img src={iconIntagram}></img></a></li>
-                                <li><a><img src={iconLinkedin}></img></a></li>
-                                <li><a><img src={iconYoutube}></img></a></li>
+                                <li><a href="https://www.instagram.com/autoforcebr/" target='_blank'><img src={iconIntagram} alt="Instagram"/></a></li>
+                                <li><a href='https://www.linkedin.com/company/autoforcebrasil/' target='_blank'><img src={iconLinkedin} alt="LinkedIn"/></a></li>
+                                <li><a href='https://www.youtube.com/@autoforcebr' target='_blank'><img src={iconYoutube} alt="YouTube"/></a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="simple-border-divider" />
                     <div className='company-info'>
-                        <h4>Razão Social: <span>AUTO FORCE PLATAFORMA DE MARKETING DIGITAL LTDA</span></h4>
-                        <h4>CNPJ:  <span>22.588.947/0001-06</span></h4>
-                        <h4>Endereço Matriz: <span>Av. Prudente de Morais, 3966, Lagoa Nova. Natal/RN –  CEP 59056-200</span></h4>
+                        <h4>Razão Social: <span>{company.company_name}</span></h4>
+                        <h4>CNPJ:  <span>{company.cnpj}</span></h4>
+                        <h4>Endereço Matriz: <span>{company.address}</span></h4>
                     </div>
 
                     <div className="simple-border-divider" />
@@ -34,7 +47,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <p>© Copyright 2021 - AutoForce - Todos os direitos reservados</p>
-                            <p>Confira a nossa <a>Politica de privacidade.</a></p>
+                            <p>Confira a nossa <a href='https://lp.autoforce.com/pol%C3%ADtica-de-privacidade' style={{textDecoration: "underline"}}>Politica de privacidade.</a></p>
                         </div>
                     </div>
                 </div>

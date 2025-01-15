@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'variables';
+@import './variables.scss';
 @import 'components/Footer.scss';
 @import 'components/Navbar.scss';
 @import 'components/Infocar.scss';
-@import 'components/Aboutcar.scss';
 @import 'components/Aboutcar.scss';
 @import 'components/Header.scss';
 
@@ -14,6 +13,7 @@ body {
     margin: 0;
     padding-top: calc(1.5vw + 42px);
     background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .center-div {

@@ -15,10 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "npx tailwindcss -i ./src/assets/styles/main.scss -o ./public/styles.css --watch"
+    "build:css": "npx sass --watch src/assets/styles:src/assets/styles",
+    "start:fake-api": "json-server --watch fake-api/db.json --port 3000"
   },
   "eslintConfig": {
-    "extends": [
+    "extends": [ 
       "react-app",
       "react-app/jest"
     ]
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "json-server": "^1.0.0-beta.3",
     "postcss": "^8.4.49",
     "sass": "^1.83.1",
     "tailwindcss": "^3.4.17"

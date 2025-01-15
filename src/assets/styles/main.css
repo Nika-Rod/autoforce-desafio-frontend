@@ -291,7 +291,7 @@ nav .menu-icon .line.open:nth-child(3) {
 .Info-car .main-info .main-info-2 .title {
   font-size: 32px;
   font-weight: 700;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .Info-car .main-info .main-info-2 .text {
   font-size: 16px;
@@ -323,6 +323,8 @@ nav .menu-icon .line.open:nth-child(3) {
   }
   .Info-car .main-info .main-table-info {
     flex-direction: column;
+    align-items: center;
+    gap: 2vh;
   }
   .Info-car .main-info .main-table-info .div-table-info-title {
     gap: 0;
@@ -365,6 +367,8 @@ nav .menu-icon .line.open:nth-child(3) {
   }
   .Info-car .main-info .main-table-info {
     flex-direction: column;
+    align-items: center;
+    gap: 2vh;
   }
   .Info-car .main-info .main-table-info .div-table-info-title {
     gap: 0;
@@ -414,6 +418,8 @@ nav .menu-icon .line.open:nth-child(3) {
   }
   .Info-car .main-info .main-table-info {
     flex-direction: column;
+    align-items: center;
+    gap: 2vh;
   }
   .Info-car .main-info .main-table-info .div-table-info-title {
     gap: 0;
@@ -438,56 +444,6 @@ nav .menu-icon .line.open:nth-child(3) {
   }
   .Info-car .main-info .main-info-2 .title,
   .Info-car .main-info .main-info-2 .text p {
-    text-align: center;
-  }
-}
-.About-car {
-  padding-bottom: 10vh;
-}
-.About-car .about {
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-}
-.About-car .about .title {
-  display: flex;
-  flex-direction: column;
-  gap: 6vh;
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 3vh;
-}
-.About-car .about .more-info {
-  font-size: 14px;
-}
-.About-car .about .more-info span {
-  font-weight: 700;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .About-car .about {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-  }
-  .About-car .about .title {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .About-car .about .more-info {
-    font-size: 14px;
-  }
-  .About-car .about .more-info span {
-    font-weight: 700;
-  }
-}
-@media (min-width: 640px) and (max-width: 767px) {
-  .About-car .about .title {
-    text-align: center;
-  }
-}
-@media (max-width: 639px) {
-  .About-car .about .title {
     text-align: center;
   }
 }
@@ -569,8 +525,11 @@ nav .menu-icon .line.open:nth-child(3) {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.Header .header-row .title-text h1 .text-primary {
-  color: #007bff;
+.Header .header-row .title-text h1 span {
+  color: #3754E2;
+}
+.Header .header-main {
+  margin-bottom: 10vh;
 }
 .Header .header-main .title-text {
   display: flex;
@@ -789,6 +748,7 @@ body {
   margin: 0;
   padding-top: calc(1.5vw + 42px);
   background-color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 
 .center-div {

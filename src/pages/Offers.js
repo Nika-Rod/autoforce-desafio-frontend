@@ -1,11 +1,11 @@
 import InfoCar from '../components/layout/InfoCar';
 
-function About() {
+function Offers() {
     return (
-        <div className='About'>
+        <div className='Offers'>
             <InfoCar />
         </div>
     );
 }
 
-export default About;
+export default Offers;

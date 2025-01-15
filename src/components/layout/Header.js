@@ -14,20 +14,19 @@ import FordIcon from '../../assets/svg/icon_ford';
 import ChevroletIcon from '../../assets/svg/icon_chevrolet';
 
 const Header = () => {
-    
     const navigate = useNavigate();
 
     const cars = [
-        { icon: <AudiIcon />, title: "Audi", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MercedesIcon />, title: "Mercedes-Benz", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <JaguarIcon />, title: "Jaguar", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <PorsheIcon />, title: "Porsche", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <BmwIcon />, title: "BMW", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <AstonMartinIcon />, title: "Aston Martin", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MaseratiIcon />, title: "Maserati", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MiniIcon />, title: "Mini (BMW Group)", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <FordIcon />, title: "Ford", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <ChevroletIcon />, title: "Chevrolet", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { id: 1, icon: <AudiIcon />, title: "Audi", details: "Audi A5 Cabriolet" },
+        { id: 2, icon: <MercedesIcon />, title: "Mercedes-Benz", details: "Mercedes-Benz Classe C Cabriolet" },
+        { id: 3, icon: <JaguarIcon />, title: "Jaguar", details: "Jaguar F-Type Convertible" },
+        { id: 4, icon: <PorsheIcon />, title: "Porsche", details: "Porsche 911 Cabriolet" },
+        { id: 5, icon: <BmwIcon />, title: "BMW", details: "BMW Série 4 Cabrio" },
+        { id: 6, icon: <AstonMartinIcon />, title: "Aston Martin", details: "Aston Martin Vantage Roadster" },
+        { id: 7, icon: <MaseratiIcon />, title: "Maserati", details: "Maserati GranCabrio" },
+        { id: 8, icon: <MiniIcon />, title: "Mini (BMW Group)", details: "Mini Cooper S Cabriolet" },
+        { id: 9, icon: <FordIcon />, title: "Ford", details: "Ford Mustang Convertible" },
+        { id: 10, icon: <ChevroletIcon />, title: "Chevrolet", details: "Chevrolet Camaro Cabriolet" },
     ];
 
     return (
@@ -40,8 +39,6 @@ const Header = () => {
                     <p className="fade-in">
                         Bem-vindo ao site da Dealer! Estamos aqui para ajudá-lo a encontrar todas as informações que precisa para escolher o carro perfeito para você.
                     </p>
-                    <div className="fade-in"><Button text={"Começar"} /></div>
-
                 </div>
                 <div className="fade-in">
                     <HeaderCarousel />
@@ -52,17 +49,16 @@ const Header = () => {
 
             <div className="header-main">
                 <div className="title-text fade-in">
-                    <h2 className="fade-in">Property Types</h2>
+                    <h2 className="fade-in">Nossos Modelos</h2>
                     <p className="fade-in">
-                        Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.
+                        Confira abaixo nossos melhores modelos. Selecione um card para explorar todas as informações que cada um pode oferecer a você
                     </p>
                 </div>
                 <div className="cards-container">
-                    {cars.map((car, index) => (
+                    {cars.map((car) => (
                         <div className="card"
-                            key={index}
-                            onClick={() => navigate(`/offers/${car.title}`)}>
-
+                            key={car.id}
+                            onClick={() => navigate(`/offers/${car.id}`, { state: { carName: car.title, carDetails: car.details}})}>
                             <div className="card-icon">
                                 {car.icon ? car.icon : <span>Sem ícone</span>}
                             </div>
@@ -77,3 +73,4 @@ const Header = () => {
 };
 
 export default Header;
+

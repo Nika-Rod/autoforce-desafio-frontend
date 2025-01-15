@@ -1,0 +1,152 @@
+{
+  "vehicle": [
+    {
+      "id": 1,
+      "name": "Audi A5 Cabriolet",
+      "price": 215000,
+      "features": {
+        "consumption": "12.8 km/l",
+        "engine": "2.0 L TFSI",
+        "power": "249 cv",
+        "speed": "250 km/h"
+      },
+      "image": "https://cdn.motor1.com/images/mgl/lE2LqW/s1/audi-a5-cabriolet-competition-edition-plus-2022.jpg",
+      "video": "NcISnWxk21s",
+      "legal_text": "Valor de tabela (código 854739), ano/modelo 22/23 à vista a partir de R$ 215.000. Financiamento sujeito a análise. Taxas e condições podem variar."
+    },
+    {
+      "id": 2,
+      "name": "Mercedes-Benz Classe C Cabriolet",
+      "price": 289900,
+      "features": {
+        "consumption": "13.2 km/l",
+        "engine": "2.0 L Turbo",
+        "power": "258 cv",
+        "speed": "250 km/h"
+      },
+      "image": "https://carro.blog.br/wp-content/uploads/2020/10/2021-mercedes-conversivel.jpg",
+      "video": "tgg9rhe9Guc",
+      "legal_text": "Valor de tabela (código 837492), ano/modelo 23/24 à vista a partir de R$ 289.900. Consulte condições de financiamento e pintura especial."
+    },
+    {
+      "id": 3,
+      "name": "Jaguar F-Type Convertible",
+      "price": 499000,
+      "features": {
+        "consumption": "8.4 km/l",
+        "engine": "5.0 L V8",
+        "power": "450 cv",
+        "speed": "285 km/h"
+      },
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2024-jaguar-f-type-r75-convertible-151-edit-660f012e498ef.jpg?crop=0.546xw:0.460xh;0.345xw,0.439xh&resize=2048:*",
+      "video": "N0CTDmU1AjU",
+      "legal_text": "Valor de tabela (código 849372), ano/modelo 22/23 à vista a partir de R$ 499.000. Taxas e condições de financiamento sob consulta."
+    },
+    {
+      "id": 4,
+      "name": "Porsche 911 Cabriolet",
+      "price": 859000,
+      "features": {
+        "consumption": "10.2 km/l",
+        "engine": "3.0 L Boxer Twin-Turbo",
+        "power": "450 cv",
+        "speed": "305 km/h"
+      },
+      "image": "https://soveiculos.com.br/wp-content/uploads/2024/06/Porsche-911_Carrera_GTS_Cabriolet-2025.jpg",
+      "video": "NV3MrKCzAzY",
+      "legal_text": "Valor de tabela (código 834621), ano/modelo 23/24 à vista a partir de R$ 859.000. Sujeito à disponibilidade e taxas de câmbio."
+    },
+    {
+      "id": 5,
+      "name": "BMW Série 4 Cabrio",
+      "price": 179950,
+      "features": {
+        "consumption": "14.7 km/l",
+        "engine": "999 cm3",
+        "power": "75 cv",
+        "speed": "154 km/h"
+      },
+      "image": "https://uploads.automaistv.com.br/2022/03/bmw_4_series_cabrio_m_sport_57_edited.jpg",
+      "video": "cFyrTEYyq64",
+      "legal_text": "Valor de tabela (código 823839), ano/modelo 18/19 à vista a partir de R$ 179.950 ou financiado com entrada de R$ 40.490 (40%) e mais 24 prestações mensais de R$ 1.286, taxa de juros 0% a.m. e 0% a.a. Total da operação: R$ 205.874. Oferta válida para veículos com pintura sólida."
+    },
+    {
+      "id": 6,
+      "name": "Aston Martin Vantage Roadster",
+      "price": 1345000,
+      "features": {
+        "consumption": "7.9 km/l",
+        "engine": "4.0 L V8 Twin-Turbo",
+        "power": "510 cv",
+        "speed": "305 km/h"
+      },
+      "image": "https://www.astonmartinsaopaulo.com.br/pub/content/aston-mart_1_220830_2645.jpg?mw=1980&rev=6adbc4f086f1460b82775b2bc96716bb&format=webp&hash=2A1986FC1843130D51796F72460877EA",
+      "video": "DMUpSBXCHeA",
+      "legal_text": "Valor de tabela (código 897423), ano/modelo 23/24 à vista a partir de R$ 1.345.000. Veículos sujeitos à disponibilidade."
+    },
+    {
+      "id": 7,
+      "name": "Maserati GranCabrio",
+      "price": 1350000,
+      "features": {
+        "consumption": "6.8 km/l",
+        "engine": "4.7 L V8",
+        "power": "460 cv",
+        "speed": "288 km/h"
+      },
+      "image": "https://resources.formula-e.pulselive.com/photo-resources/2024/04/16/9835b996-8480-4433-8673-0a9a6794f252/2-23855-MaseratiGranCabrioFolgore.jpg?width=1440&height=810",
+      "video": "mz_R9elibds",
+      "legal_text": "Valor de tabela (código 899372), ano/modelo 23/24 à vista a partir de R$ 1.350.000. Consulte taxas e condições exclusivas."
+    },
+    {
+      "id": 8,
+      "name": "Mini Cooper S Cabriolet",
+      "price": 249950,
+      "features": {
+        "consumption": "13.5 km/l",
+        "engine": "2.0 L Turbo",
+        "power": "192 cv",
+        "speed": "230 km/h"
+      },
+      "image": "https://s2-autoesporte.glbimg.com/7unAm1D2uV9ybKqoGLssaf5dGtQ=/0x0:620x413/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/2/H/JITYB7QAmWTz74n9p0ww/2016-08-19-mini-cooper-s-cabrio-001.jpg",
+      "video": "lwL3cgqyNsI",
+      "legal_text": "Valor de tabela (código 845372), ano/modelo 23/24 à vista a partir de R$ 249.950. Financiamento sujeito à aprovação de crédito."
+    },
+    {
+      "id": 9,
+      "name": "Chevrolet Camaro Cabriolet",
+      "price": 499950,
+      "features": {
+        "consumption": "8.2 km/l",
+        "engine": "6.2 L V8",
+        "power": "461 cv",
+        "speed": "290 km/h"
+      },
+      "image": "https://ogimg.infoglobo.com.br/in/14884086-08f-6e7/FT1086A/760/2014-773717305-2014120506751.jpg_20141205.jpg",
+      "video": "PgTDR9zH6CY",
+      "legal_text": "Valor de tabela (código 837465), ano/modelo 23/24 à vista a partir de R$ 499.950. Financiamento sujeito à análise."
+    },
+    {
+      "id": 10,
+      "name": "Ford Mustang Convertible",
+      "price": 389950,
+      "features": {
+        "consumption": "9.0 km/l",
+        "engine": "5.0 L V8",
+        "power": "466 cv",
+        "speed": "250 km/h"
+      },
+      "image": "https://www.motortrend.com/uploads/2023/10/016-2024-Ford-Mustang-GT-Convertible-front-three-quarter-in-action.jpg",
+      "video": "TRrxlWzoySA",
+      "legal_text": "Valor de tabela (código 831973), ano/modelo 23/24 à vista a partir de R$ 389.950. Consulte a disponibilidade na rede de concessionárias."
+    }
+  ],
+  
+  "company": {
+    "company_name": "AUTO FORCE PLATAFORMA DE MARKETING DIGITAL LTDA",
+    "cnpj": "22.580.947/0001-06",
+    "address": "Av. Prudente de Morais, 3966, Lagoa Nova, Natal/RN – CEP 59056-200",
+    "phone": "84987654321",
+    "whatsapp": "84912345678"
+  }
+}

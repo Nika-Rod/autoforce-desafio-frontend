@@ -1,9 +1,10 @@
 import Header from '../components/layout/Header';
 
 function Home() {
+
     return (
         <div className='Home'>
-            <Header />
+            <Header/>
         </div>
     );
 }
