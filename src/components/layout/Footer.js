@@ -23,13 +23,13 @@ const Footer = () => {
             <div className='center-div margin-center padding-center'>
                 <div className='div-footer'>
                     <div className='social-midia'>
-                        <img src={logoDealer} />
+                        <img src={logoDealer} alt='logo-dealer'/>
                         <div className='list'>
                             <p>Siga nos:</p>
                             <ul>
-                                <li><a href="https://www.instagram.com/autoforcebr/" target='_blank'><img src={iconIntagram} alt="Instagram"/></a></li>
-                                <li><a href='https://www.linkedin.com/company/autoforcebrasil/' target='_blank'><img src={iconLinkedin} alt="LinkedIn"/></a></li>
-                                <li><a href='https://www.youtube.com/@autoforcebr' target='_blank'><img src={iconYoutube} alt="YouTube"/></a></li>
+                                <li><a href="https://www.instagram.com/autoforcebr/" target='_blank' rel="noreferrer"><img src={iconIntagram} alt="Instagram"/></a></li>
+                                <li><a href='https://www.linkedin.com/company/autoforcebrasil/' target='_blank' rel="noreferrer"><img src={iconLinkedin} alt="LinkedIn"/></a></li>
+                                <li><a href='https://www.youtube.com/@autoforcebr' target='_blank' rel="noreferrer"><img src={iconYoutube} alt="YouTube"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className="simple-border-divider" />
                     <div className='privacy-policy'>
                         <div>
-                            <img src={logoAutoForce} />
+                            <img src={logoAutoForce} alt='logo-autoforce'/>
                         </div>
                         <div>
                             <p>© Copyright 2021 - AutoForce - Todos os direitos reservados</p>

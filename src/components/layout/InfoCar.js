@@ -1,6 +1,5 @@
 import { useParams, useLocation, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import bmwImage from '../../assets/images/bmw.png';
 import iconCilindrada from '../../assets/svg/icon_cilindrada.svg';
 import iconConsumo from '../../assets/svg/icon_consumo.svg';
 import iconPotencia from '../../assets/svg/icon_potencia.svg';
@@ -39,7 +38,6 @@ const InfoCar = () => {
     const [vehicle, setVehicle] = useState(null);
     const [company, setCompany] = useState(null);
     const carName = location.state?.carName;
-    const carDetail = location.state?.carDetail;
 
     const breadcrumbItems = [
         { label: 'Ofertas', path: '/' },
