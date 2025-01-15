@@ -5,7 +5,6 @@ footer {
     padding-bottom: 6vh;
 
     .div-footer {
-
         .social-midia {
             display: flex;
             justify-content: space-between;
@@ -47,6 +46,51 @@ footer {
             p {
                 font-size: 12px;
                 text-align: end;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {}
+
+@media (max-width: 639px) {
+
+    footer {
+        .div-footer {
+            .social-midia {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
+                gap: 2vh;
+
+                .list {
+                    gap: 2vh;
+                    align-items: center;
+                    flex-direction: column;
+
+                    ul {
+                        gap: 1vh;
+                    }
+                }
+            }
+
+            .company-info {
+                gap: 1.5vh;
+                margin: 2vh 0;
+                align-items: center;
+                text-align: center;
+            }
+
+            .privacy-policy {
+                justify-content: space-between;
+                margin-top: 4vh;
+                flex-direction: column;
+                align-items: center;
+                gap: 1vh;
+
+                p {
+                    text-align: center;
+                } 
             }
         }
     }

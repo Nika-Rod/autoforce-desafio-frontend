@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import HeaderCarousel from './HeaderCarousel';
 import Button from '../common/Button';
 import AudiIcon from '../../assets/svg/icon_audi';
@@ -13,18 +14,20 @@ import FordIcon from '../../assets/svg/icon_ford';
 import ChevroletIcon from '../../assets/svg/icon_chevrolet';
 
 const Header = () => {
+    
+    const navigate = useNavigate();
 
     const cars = [
-        { icon: <AudiIcon/>, title: "Audi", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MercedesIcon/>, title: "Mercedes-Benz", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <JaguarIcon/>, title: "Jaguar", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <PorsheIcon/>, title: "Porsche", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <BmwIcon/>, title: "BMW", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <AstonMartinIcon/>, title: "Aston Martin", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MaseratiIcon/>, title: "Maserati", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <MiniIcon/>, title: "Mini (BMW Group)", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <FordIcon/>, title: "Ford", datails: "Ipsum diam justo sed rebum vero dolor duo." },
-        { icon: <ChevroletIcon/>, title: "Chevrolet", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <AudiIcon />, title: "Audi", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <MercedesIcon />, title: "Mercedes-Benz", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <JaguarIcon />, title: "Jaguar", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <PorsheIcon />, title: "Porsche", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <BmwIcon />, title: "BMW", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <AstonMartinIcon />, title: "Aston Martin", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <MaseratiIcon />, title: "Maserati", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <MiniIcon />, title: "Mini (BMW Group)", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <FordIcon />, title: "Ford", datails: "Ipsum diam justo sed rebum vero dolor duo." },
+        { icon: <ChevroletIcon />, title: "Chevrolet", datails: "Ipsum diam justo sed rebum vero dolor duo." },
     ];
 
     return (
@@ -56,7 +59,10 @@ const Header = () => {
                 </div>
                 <div className="cards-container">
                     {cars.map((car, index) => (
-                        <div className="card" key={index}>
+                        <div className="card"
+                            key={index}
+                            onClick={() => navigate(`/offers/${car.title}`)}>
+
                             <div className="card-icon">
                                 {car.icon ? car.icon : <span>Sem ícone</span>}
                             </div>

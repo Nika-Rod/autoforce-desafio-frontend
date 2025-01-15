@@ -7,8 +7,12 @@
         gap: 2vh;
 
         .title {
+            display: flex;
+            flex-direction: column;
+            gap: 6vh;
             font-size: 24px;
             font-weight: 700;
+            margin-top: 3vh;
         }
 
         .more-info {
@@ -16,6 +20,55 @@
 
             span {
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .About-car {
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .more-info {
+                font-size: 14px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+    .About-car {
+        .about {
+            .title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+
+    .About-car {
+        .about {
+            .title {
+                text-align: center;
             }
         }
     }

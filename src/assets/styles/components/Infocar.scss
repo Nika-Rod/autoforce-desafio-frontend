@@ -10,13 +10,56 @@
         font-size: 32px;
         font-weight: 700;
 
-        .car-title {
-            background-color: rgb(241, 241, 241);
-            padding-bottom: 1vh;
-            padding-top: 10vh;
+        .breadcrumb {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+
+            ol {
+                display: flex;
+                gap: 8px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .breadcrumb ol li {
+                color: #666;
+            }
+
+            .breadcrumb ol li a {
+                text-decoration: none;
+                color: #666666;
+            }
+
+            .breadcrumb ol li a:hover {
+                text-decoration: underline;
+            }
+
+            .breadcrumb ol li span {
+                color: #000; 
+            }
+
+            .breadcrumb-back a {
+                text-decoration: none;
+                color: #666666;
+            }
+
+            .breadcrumb-back a:hover {
+                text-decoration: underline;
+            }
         }
 
-        div {
+        .car-title {
+            background-color: rgb(241, 241, 241);
+            padding-bottom: 2vh;
+            padding-top: 8vh;
+        }
+
+        .car-subtitle {
             padding-top: 1.5vh;
 
             h4 {
@@ -27,6 +70,8 @@
             h3 {
                 font-size: 32px;
                 font-weight: 400;
+                margin-top: .8vh;
+
 
                 span {
                     font-weight: 700;
@@ -45,41 +90,48 @@
             justify-content: space-around;
             font-weight: 700;
 
-            .table-info-title {
-                font-size: 24px;
-            }
+            .div-table-info-title {
+                display: flex;
+                flex-direction: column;
+                gap: 2vh;
 
-            .table-info {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-                margin-bottom: 3.5vh;
+                .table-info-title {
+                    font-size: 24px;
+                }
 
-                .img-icon {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
+                .table-info {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2.5rem;
+                    margin-bottom: 3.5vh;
 
-                    img {
-                        flex-shrink: 0;
-                        width: 24px;
-                        height: auto;
-                    }
-
-                    .table-info-titles {
+                    .img-icon {
                         display: flex;
-                        flex-direction: column;
+                        align-items: center;
+                        gap: 1rem;
 
-                        p {
-                            margin: 0;
+                        img {
+                            flex-shrink: 0;
+                            width: 24px;
+                            height: auto;
                         }
 
-                        span {
-                            color: $primary-color;
+                        .table-info-titles {
+                            display: flex;
+                            flex-direction: column;
+
+                            p {
+                                margin: 0;
+                            }
+
+                            span {
+                                color: $primary-color;
+                            }
                         }
                     }
                 }
             }
+
         }
 
         .main-info-2 {
@@ -89,7 +141,7 @@
             .title {
                 font-size: 32px;
                 font-weight: 700;
-                padding: 20px;
+                padding: 0 20px;
             }
 
             .text {
@@ -99,6 +151,208 @@
             .title,
             .text {
                 flex: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .Info-car {
+        .car-info {
+            .car-title {
+                padding-top: 4vh;
+
+                h2 {
+                    text-align: center;
+                    padding: 3vh 0;
+                }
+            }
+
+            .car-subtitle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4,
+                h3 {
+                    text-align: center;
+                }
+
+                h3 {
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .main-info {
+            .main-table-info {
+                flex-direction: column;
+
+                .div-table-info-title {
+                    gap: 0;
+
+                    .main-button {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5vh;
+                    }
+
+                    .table-info {
+                        margin-top: 4vh;
+
+                        .img-icon {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .main-info-2 {
+                flex-direction: column;
+                gap: 5vh;
+
+                .title,
+                .text p {
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+    .Info-car {
+        .car-info {
+
+            .car-title {
+                padding-top: 4vh;
+            }
+
+            .car-subtitle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4,
+                h3 {
+                    text-align: center;
+                }
+
+                h3 {
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .main-info {
+            .main-table-info {
+                flex-direction: column;
+
+                .div-table-info-title {
+                    gap: 0;
+
+                    .main-button {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5vh;
+                    }
+
+                    .table-info {
+                        margin-top: 4vh;
+
+                        .img-icon {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .main-info-2 {
+                flex-direction: column;
+                gap: 6vh;
+
+                .title,
+                .text p {
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .Info-car {
+        .padding-center {
+            padding-right: 5vh;
+            padding-left: 5vh;
+        }
+
+        .car-info {
+
+            .car-title {
+                padding-top: 3vh;
+            }
+
+            .car-subtitle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                h4,
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .main-info {
+            .main-table-info {
+                flex-direction: column;
+                
+                .div-table-info-title {
+                    gap: 0;
+                    
+                    .main-button {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5vh;
+                    }
+    
+                    .table-info {
+                        margin-top: 4vh;
+    
+                        .img-icon {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .main-info-2 {
+                flex-direction: column;
+                gap: 5vh;
+
+                .title {
+                    font-size: 26px;
+                }
+
+                .title,
+                .text p {
+                    text-align: center;
+                }
+
             }
         }
     }
